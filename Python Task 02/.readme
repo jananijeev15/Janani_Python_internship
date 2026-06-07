@@ -1,0 +1,255 @@
+# Programming Task 02: Decision Making & Logic Building
+
+## Overview
+This project contains solutions for 5 programming tasks in both Python and C. The tasks are designed to strengthen understanding of variables, operators, user input, conditional statements, and logical thinking.
+
+---
+
+## Task A: Even or Odd Checker
+
+### Description
+Takes a number as input and checks whether it is even or odd.
+
+### How It Works
+- User enters a number
+- Program uses modulo operator (%) to check if the number is divisible by 2
+- If remainder is 0, it's even; otherwise, it's odd
+- Result is displayed to the user
+
+### Example
+```
+Input: 15
+Output: 15 is an Odd Number
+```
+
+### Key Concepts
+- Modulo operator (%)
+- if-else conditional statements
+- User input handling
+
+---
+
+## Task B: Largest of Three Numbers
+
+### Description
+Takes three numbers as input and finds the largest number.
+
+### How It Works
+- User enters three numbers
+- Program compares all three numbers using nested if-else statements
+- Identifies and displays the largest number
+
+### Example
+```
+Input: 10, 25, 18
+Output: Largest Number = 25
+```
+
+### Key Concepts
+- Comparison operators (>, <)
+- Nested if-else statements
+- Logical decision making
+
+---
+
+## Task C: Student Grade Calculator
+
+### Description
+Accepts marks from the user and displays grade according to predefined criteria.
+
+### Grading Criteria
+| Marks | Grade |
+|-------|-------|
+| 90-100 | A |
+| 80-89 | B |
+| 70-79 | C |
+| 60-69 | D |
+| Below 60 | F |
+
+### How It Works
+- User enters marks
+- Program evaluates marks against grade criteria using if-elif-else
+- Corresponding grade is displayed
+
+### Example
+```
+Input: 85
+Output: Grade: B
+```
+
+### Key Concepts
+- Range checking with compound conditions
+- Multiple conditional branches
+- Input validation
+
+---
+
+## Task D: Simple Login Validation
+
+### Description
+Stores a predefined username and password, takes input from the user, and validates the credentials.
+
+### Predefined Credentials
+- Username: `admin`
+- Password: `password123`
+
+### How It Works
+- Program stores correct username and password
+- User enters username and password
+- Program validates both credentials using string comparison
+- Success or failure message is displayed
+
+### Example
+```
+Input:
+Username: admin
+Password: password123
+Output: Login Successful
+
+OR
+
+Input:
+Username: user
+Password: wrong
+Output: Invalid Credentials
+```
+
+### Key Concepts
+- String handling and comparison
+- Logical AND operator (&&)
+- User authentication basics
+
+---
+
+## Task E: Password Strength Checker
+
+### Description
+Checks the strength of a password based on specific criteria.
+
+### Strength Criteria
+- Password length should be at least 8 characters
+- Contains at least one number
+- Contains at least one uppercase letter
+
+### Strength Levels
+- **Strong Password**: All 3 criteria met
+- **Moderate Password**: 2 criteria met
+- **Weak Password**: Less than 2 criteria met
+
+### How It Works
+- User enters a password
+- Program checks each criterion:
+  - Length >= 8
+  - Contains at least one digit
+  - Contains at least one uppercase letter
+- Based on criteria met, strength is determined and displayed
+
+### Example
+```
+Input: Cyber123
+Output: Strong Password
+
+Input: cyber123
+Output: Moderate Password (no uppercase)
+
+Input: cyber
+Output: Weak Password
+```
+
+### Key Concepts
+- String functions and character checking
+- Character classification (isdigit, isupper, etc.)
+- Logical operators
+- Password security basics
+
+---
+
+## File Structure
+
+```
+Programming_Task_02_YourName/
+├── Python/
+│   ├── even_odd.py
+│   ├── largest_number.py
+│   ├── grade_calculator.py
+│   ├── login_validation.py
+│   └── password_checker.py
+├── C/
+│   ├── even_odd.c
+│   ├── largest_number.c
+│   ├── grade_calculator.c
+│   ├── login_validation.c
+│   └── password_checker.c
+├── Screenshots/
+│   ├── even_odd_output.png
+│   ├── largest_number_output.png
+│   ├── grade_calculator_output.png
+│   ├── login_validation_output.png
+│   └── password_checker_output.png
+└── README.md
+```
+
+---
+
+## How to Run
+
+### Python Programs
+```bash
+# Navigate to the Python directory
+python even_odd.py
+python largest_number.py
+python grade_calculator.py
+python login_validation.py
+python password_checker.py
+```
+
+### C Programs
+```bash
+# Compile
+gcc even_odd.c -o even_odd
+gcc largest_number.c -o largest_number
+gcc grade_calculator.c -o grade_calculator
+gcc login_validation.c -o login_validation
+gcc password_checker.c -o password_checker
+
+# Run
+./even_odd
+./largest_number
+./grade_calculator
+./login_validation
+./password_checker
+```
+
+---
+
+## Key Concepts Learned
+
+### Python Concepts
+- `if`, `elif`, `else` statements
+- Comparison operators: `==`, `!=`, `>`, `<`, `>=`, `<=`
+- Logical operators: `and`, `or`, `not`
+- String functions and methods
+- User input with `input()` function
+- Built-in functions like `max()`, `len()`
+
+### C Concepts
+- `if`, `else if`, `else` statements
+- Comparison operators: `==`, `!=`, `>`, `<`, `>=`, `<=`
+- Logical operators: `&&`, `||`, `!`
+- String handling with `string.h`
+- Character classification with `ctype.h`
+- User input with `scanf()`
+- Standard I/O with `printf()`
+
+---
+
+## Learning Outcomes
+
+After completing this task, i understood:
+1. How to use conditional statements effectively
+2. How to make logical decisions in programs
+3. String comparison and validation
+4. Character-level analysis in strings
+5. Input validation and security basics
+6. Flowcharts and algorithm development
+7. Problem decomposition into smaller steps
